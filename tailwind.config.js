@@ -11,6 +11,9 @@ module.exports = {
         'outfit': ['"Outfit"', ...defaultTheme.fontFamily.sans],
         'marker': ['"Permanent Marker"', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/assets/images/image2.svg')",
+      }
     },
   },
   plugins: [],

@@ -3,12 +3,68 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    html {
-      font-family: "Outfit", system-ui, sans-serif;
+  html {
+    font-family: "Outfit", system-ui, sans-serif;
+  }
+  .img {
+    background-image: url("./assets/images/anim.png");
+    width: 270px;
+    height: 200px;
+    margin: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .animated {
+    animation: cookie 0.4s infinite linear;
+  }
+
+  @keyframes cookie {
+    0% {
+      transform: translateX(0px) translateY(0px) rotate(0deg);
     }
-    .nav-gradient{
-      -bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    25% {
+      transform: translateX(0px) translateY(0px) rotate(5deg);
+    }
+    50% {
+      transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    75% {
+      transform: translateX(0px) translateY(0px) rotate(-5deg);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px) rotate(0deg);
     }
   }
+
+  /* https://www.cssscript.com/animated-waves-svg/ */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+}

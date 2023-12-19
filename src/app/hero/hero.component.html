@@ -1,1 +1,74 @@
-<p>hero works!</p>
+<div class="hero-wrapper flex w-screen h-screen bg-purple-100">
+    <div class="flex w-screen justify-end">
+
+        <div class="cookie-anime absolute w-[65%] h-[100%] t-0 r-0 overflow-hidden invisible lg:visible">
+            <div class="cookie-anime-container w-[150%] h-[200%] flex flex-col flex-wrap content-start rotate-[25deg]">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img animated"></div>
+            </div>
+        </div>
+        <div class="description relative flex">
+            <div
+                class="des-container absolute flex flex-col items-center lg:items-start lg:p-20  w-screen justify-center lg:justify-start h-screen tracking-wide">
+
+                <div class="first  flex flex-row">
+                    <h2 class="text-5xl lg:text-7xl pt-2 font-marker tracking-wider">FUNCTIONAL </h2>
+                    <img src="../../assets/images/image2.svg" alt="" srcset="" class="w-20 h-20 lg:block hidden">
+                </div>
+
+                
+                <h2 class="text-5xl lg:text-7xl pt-2 font-marker text-[#48d9b6] underline tracking-wider">SNACKS</h2>
+                <div class="end flex flex-col lg:flex-row items-center">
+                    <h2 class="text-5xl lg:text-7xl pt-2 font-marker tracking-wider">BRAND</h2>
+                    <span class="text-lg font-bold pt-2 lg:pl-12 relative">
+                        NEWEST <br />
+                        HEALTHY <br />
+                        SNACK
+                    </span>
+                </div>
+                <p class="pt-6 text-[1.2rem]">Unique taste and beneficial for your health! </p>
+                <app-button [buttonValue]="buttonValue" class="pt-6 text-[1rem]"></app-button>
+            </div>
+
+
+        </div>
+        <svg class="waves self-end relative w-full mb-[-7px] min-h-[100px] max-h-[150px]"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+            preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+
+
+
+    </div>
+</div>
