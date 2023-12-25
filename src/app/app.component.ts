@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { HeroComponent } from './hero/hero.component';
     CommonModule,
     RouterOutlet,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    AboutComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

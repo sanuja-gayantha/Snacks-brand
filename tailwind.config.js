@@ -13,7 +13,11 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/assets/images/image2.svg')",
-      }
+      },      
+      colors: {
+        'primary': '#48d9b6',
+
+      },
     },
   },
   plugins: [],
