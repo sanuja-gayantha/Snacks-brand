@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
+import { FoodItemComponent } from './food-item/food-item.component';
+import { FoodItemsService } from './food-items.service';
+import { FoodItems } from './food-items';
+import { IngredientsComponent } from './ingredients/ingredients.component';
+import { ExploreComponent } from './explore/explore.component';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +18,22 @@ import { AboutComponent } from './about/about.component';
     RouterOutlet,
     NavbarComponent,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    FoodItemComponent,
+    IngredientsComponent,
+    ExploreComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  // title = 'snacks-brand';
+export class AppComponent implements OnInit {
+
+  foodItemsList!:FoodItems[];
+  
+  constructor(private foodItemsService:FoodItemsService){}
+
+  ngOnInit():void{
+    this.foodItemsList = this.foodItemsService.getFoodItems()
+  } 
+
 }

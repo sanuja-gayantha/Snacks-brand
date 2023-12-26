@@ -1,1 +1,80 @@
-<p>food-item works!</p>
+<div class="food-item-wrapper flex flex-col lg:flex-row">
+
+    <div [ngClass]="{'lg:order-last ': foodItem.tasteId% 2 == 0 }" class="image lg:w-1/2">
+        <img src={{foodItem.imgUrl}} alt="" srcset="" class="w-full  h-full">
+    </div>
+
+    <div [ngClass]="foodItem.tasteColor" class="details-container lg:w-1/2 flex flex-col items-center gap-6 text-white px-4 py-16">
+
+        <div class="titles flex flex-col gap-1 text-center">
+            <span class="font-semibold text-lg">TASTE</span>
+            <span class="text-4xl lg:text-5xl font-marker">{{foodItem.taste}}</span>
+        </div>
+
+        <span class="text-center">{{foodItem.tasteDesc}}</span>
+
+        <span class="font-semibold"> NUTRITION PER SERVING </span>
+
+        <div class="nutritions-container flex flex-row flex-wrap gap-3">
+
+            <div class="nutrition-item border border-white border-dashed rounded-full w-[70px] h-[70px] text-xs lg:w-[90px] lg:h-[90px] md:text-base flex flex-col md:p-4 justify-center items-center">
+                <span>PROTEIN</span>
+                <span class="font-semibold">{{foodItem.nutrition.protein}}</span>
+            </div>
+            <div class="nutrition-item border border-white border-dashed rounded-full w-[70px] h-[70px] text-xs lg:w-[90px] lg:h-[90px] md:text-base flex flex-col md:p-4 justify-center items-center">
+                <span>FAT</span>
+                <span class="font-semibold">{{foodItem.nutrition.fat}}</span>
+            </div>
+            <div class="nutrition-item border border-white border-dashed rounded-full w-[70px] h-[70px] text-xs lg:w-[90px] lg:h-[90px] md:text-base flex flex-col md:p-4 justify-center items-center">
+                <span>CARBS</span>
+                <span class="font-semibold">{{foodItem.nutrition.carbs}}</span>
+            </div>
+            <div class="nutrition-item border border-primary-2 border-dashed rounded-full w-[70px] h-[70px] text-xs lg:w-[90px] lg:h-[90px] md:text-base flex flex-col md:p-4 justify-center items-center bg-primary-2 relative">
+                <span>ENERGY</span>
+                <span class="font-semibold">{{foodItem.nutrition.energy}}</span>
+                <img class="absolute w-10 h-10 lg:w-12 lg:h-12 -top-5 -right-3" src="../../assets/images/ring.svg" alt="" srcset="">
+            </div>
+            
+        </div>
+
+
+        <div class="prices-container flex flex-row flex-wrap items-center">
+
+            <div class="price flex flex-col text-center p-3 border-r border-white gap-2">
+                <span>PRICE</span>
+                <span>{{foodItem.price | currency}}</span>
+            </div>
+            <div class="qty flex flex-col text-center p-3 border-r border-white gap-1">
+                <span >AMOUNT</span>
+
+                <div class="input-group flex flex-row bg-white rounded-lg gap-2 h-8">
+
+                    <div (click)="decrement()" class="decrement flex flex-col justify-center px-2 cursor-pointer rounded-l-lg bg-primary-2 hover:bg-primary transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                          </svg>
+                          
+                    </div>
+
+                    <input readonly [(ngModel)]="qty" type="text" class="w-8 focus:outline-none focus:ring-0 text-center text-primary-2 " >
+
+                    <div (click)="incremnt()" class="incremnt flex flex-col justify-center px-2 cursor-pointer rounded-r-lg bg-primary-2 hover:bg-primary transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>   
+                    </div>
+                </div>
+            </div>
+            <div class="total flex flex-col text-center p-3 gap-2">
+                <span >TOTAL</span>
+                <span>{{total | currency}}</span>
+            </div>
+        </div>
+
+        <div class="button-container flex flex-col lg:flex-row gap-4 mt-4">
+            <app-button [buttonValue]="'DETAILS'" ></app-button>
+            <app-button [buttonValue]="'ADD'" ></app-button>
+        </div>
+    </div>
+
+</div>

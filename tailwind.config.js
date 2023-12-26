@@ -16,6 +16,10 @@ module.exports = {
       },      
       colors: {
         'primary': '#48d9b6',
+        'primary-2': '#1f1437',
+        'flavor1': '#a388b2',
+        'flavor2': '#f8c37e',
+
 
       },
     },

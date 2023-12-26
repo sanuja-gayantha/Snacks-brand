@@ -1,5 +1,17 @@
-<p>ingredients works!</p>
+<div class="ingredients-wrapper flex flex-col items-center mt-20">
+    <div class="ingredients-container flex flex-col max-w-[1366px] lg:px-20 gap-20 p-4">
 
-https://tw-elements.com/snippets/tailwind/tailwindelements/5236154#html-tab-view
+        <div class="top-container flex flex-col lg:flex-row justify-between gap-6">
 
-https://tw-elements.com/docs/standard/components/accordion/
+            <span class="text-4xl lg:text-6xl font-marker lg:w-1/2 text-center leading-relaxed lg:leading-relaxed">WHAT ABOUT <span class="bg-primary px-2 rounded-xl">INGREDIENTS?</span></span>
+
+            <span class="flex flex-col lg:w-1/2 text-center lg:mt-4">High level of plant-based proteins and healthy fats along with low level of carbohydrates - our snacks are the best choice for active people. </span>
+
+        </div>
+        <div class="accordion ">
+            <app-ingredient-item *ngFor="let ingredientItem of ingredientItemsList" [ingredientItem]="ingredientItem"></app-ingredient-item>
+            
+        </div>
+    </div>
+
+</div>
