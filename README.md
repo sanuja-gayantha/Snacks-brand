@@ -1,6 +1,6 @@
 # SnacksBrand
 
-This is a small business website that sells snacks, cookies 🍪, and it is fully mobile-responsive.
+This is a small business website that sells snacks, cookies 🍪, and it is fully mobile-responsive. Build with Angular standalone components.
 
 Check App --> https://snacks-brand.netlify.app/
 
