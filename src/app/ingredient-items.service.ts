@@ -42,7 +42,7 @@ export class IngredientItemsService {
       ingSubName: 'HEALTHY REPLACEMENT OF SUGAR',
       ingImgUrl: 'https://i.ibb.co/LgqWNsk/list3.png',
       ingDesc:'Topinambur syrup is a natural low glycemic index sweetener, a source of inulin and pectin. Strengthens the immune system and contains B vitamins, vitamin C, pectin, minerals and organic acids. We buy from local manufacturers.',
-      vitamins: ['B VITAMINS', 'PECTIN', 'VITAMIN C', 'INULIN', ],
+      vitamins: ['B VITAMINS', 'PECTIN', 'VITAMIN C', 'INULIN'],
     },
     {
       ingId: 4,
@@ -50,7 +50,7 @@ export class IngredientItemsService {
       ingSubName: 'HELP TO COPE WITH STRESS ',
       ingImgUrl: 'https://i.ibb.co/XtqKrfh/list4.png',
       ingDesc:'Pumpkin Protein is a fat-free, ground pumpkin seed. It is 66% protein and contains 18 amino acids. Thanks to the glutamic acid and tryptophan in the composition, pumpkin protein supports a healthy brain and nervous system and helps to cope with stress. Also contains vitamin E, zinc, magnesium, manganese and phosphorus.',
-      vitamins: ['VITAMIN E', 'ZINC', 'MAGNUM', ' MANGANESE'],
+      vitamins: ['VITAMIN E', 'ZINC', 'MAGNUM', 'MANGANESE'],
     }
   ];
 
