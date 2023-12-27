@@ -1,1 +1,24 @@
-<p>newsletter works!</p>
+<div class="newsletter-wrapper flex flex-col lg:flex-row bg-primary-2 text-white py-16 gap-10 p-4 lg:justify-evenly mt-20">
+
+    <div class="details items-center flex flex-col gap-4">
+        <span class="font-semibold text-2xl">SUBSCRIBE</span>
+        <div class="main flex flex-col">
+            <div class="main-container flex flex-row justify-center gap-2">
+                <svg class="w-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                <span class="text-4xl lg:text-6xl w-1/2 lg:w-max font-marker">WEEKLY NEWS!</span>
+            </div>
+
+        </div>
+        <span class="text-center">Stay updated on the latest developments and special offers!</span>
+    </div>
+    <div class="inputs flex flex-col lg:flex-row items-center gap-4">
+        <input type="email" name="email"
+        class="px-3 py-2 bg-white text-primary-2 border  border-primary placeholder-slate-400 focus:outline-none block sm:text-sm  w-[200px] lg:w-[250px] h-[50px] text-sm focus:ring-0"
+        placeholder="Enter email address" />
+
+        <app-button [buttonValue]="'SUBSCRIBE'" class="hover:shadow-xl hover:shadow-primary  hover:rounded-full"></app-button>
+    </div>
+
+</div>

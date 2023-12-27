@@ -9,6 +9,8 @@ import { FoodItemsService } from './food-items.service';
 import { FoodItems } from './food-items';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { ExploreComponent } from './explore/explore.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,9 @@ import { ExploreComponent } from './explore/explore.component';
     AboutComponent,
     FoodItemComponent,
     IngredientsComponent,
-    ExploreComponent
+    ExploreComponent,
+    NewsletterComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

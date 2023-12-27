@@ -1,4 +1,4 @@
-<div class="ingredient-item-wrapper">
+<div class="ingredient-item-wrapper overflow-hidden">
     
     <div [ngClass]="{'border-b':  show === true || ingredientItem.ingId===4}"  class="question border-t border-primary flex flex-col lg:flex-row gap-1 items-center  py-6 lg:justify- ">
 
@@ -22,7 +22,7 @@
             <span class="font-light font-sm text-center lg:text-start">{{ingredientItem.ingDesc}}</span>
             <div class="vitamins text-2xl lg:text-3xl flex flex-col lg:flex-row gap-4 text-center lg:text-start">
 
-                <span *ngFor="let vitamin of ingredientItem.vitamins; index as i" [ngClass]="{'text-flavor1': i%2 !== 0}" class=" font-semibold text-primary">{{vitamin}}</span>
+                <span *ngFor="let vitamin of ingredientItem.vitamins; index as i" class=" font-semibold text-primary" [ngClass]="{'text-purple-400': i%2 !== 0}"> {{vitamin}}</span>
 
             </div>
         </div>

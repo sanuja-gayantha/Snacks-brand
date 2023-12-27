@@ -1,4 +1,4 @@
-<div class="food-item-wrapper flex flex-col lg:flex-row">
+<div class="food-item-wrapper flex flex-col lg:flex-row overflow-hidden">
 
     <div [ngClass]="{'lg:order-last ': foodItem.tasteId% 2 == 0 }" class="image lg:w-1/2">
         <img src={{foodItem.imgUrl}} alt="" srcset="" class="w-full  h-full">

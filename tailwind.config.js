@@ -19,8 +19,7 @@ module.exports = {
         'primary-2': '#1f1437',
         'flavor1': '#a388b2',
         'flavor2': '#f8c37e',
-
-
+        'footer':'#170f2b'
       },
     },
   },
